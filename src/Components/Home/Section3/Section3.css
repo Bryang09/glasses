@@ -1,0 +1,23 @@
+.Section3 {
+  margin-top: 10vh;
+  height: 100%;
+}
+
+.Section3 h2 {
+  text-align: center;
+  color: #838281;
+  font-weight: 400;
+}
+
+.boxes {
+  width: 90%;
+  margin: 0 auto 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  height: 90vh;
+}
+
+.box {
+  min-width: 30%;
+  flex-grow: 1;
+}

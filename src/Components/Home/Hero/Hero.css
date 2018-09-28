@@ -1,0 +1,60 @@
+.Hero {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/838413/pexels-photo-838413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+      no-repeat;
+  /* background-size: cover; */
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.heroText {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heroText h1,
+.heroText h3 {
+  width: 90%;
+  text-align: center;
+  font-weight: 400;
+  color: #f2f2f2;
+  letter-spacing: 2px;
+}
+
+.heroText h1 {
+  font-size: 3em;
+  margin-bottom: 1vh;
+}
+
+.heroText h5 {
+  font-size: 1.2em;
+  padding: 2vh 3vw;
+  border-radius: 35px;
+  color: #f2f2f2;
+  font-weight: 400;
+
+  border: 1px solid #14d230d1;
+  cursor: pointer;
+}
+
+.heroText h5:hover {
+  /* background: #14d230d1; */
+  border: 1.5px solid #14d230d1;
+  /* transition-duration: 0.5s; */
+}
+
+@media only screen and (max-width: 768px) {
+  .Hero {
+    background-position: 70% center;
+    justify-content: center;
+  }
+  .heroText {
+    width: 80%;
+  }
+}

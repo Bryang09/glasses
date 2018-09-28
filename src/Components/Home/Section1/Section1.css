@@ -1,0 +1,72 @@
+.Section1 {
+  color: #838281;
+  margin-bottom: 3vh;
+}
+
+.sub {
+  display: flex;
+  margin-top: 3vh;
+  height: 40vh;
+}
+
+.Section1 h2 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.sectionText {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sectionText h5 {
+  font-weight: 400;
+  border: 1px solid #14d230d1;
+  padding: 2vh 2vw;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.sectionText h5:hover {
+  background: #14d230d1;
+  transition-duration: 0.5s;
+  color: #fff;
+}
+
+.Section1 h3 {
+  width: 90%;
+  font-weight: 400;
+}
+.sectionImg {
+  width: 40%;
+  background: url("https://images.pexels.com/photos/975657/pexels-photo-975657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+    no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .sectionText {
+    width: 50%;
+    margin-left: 2vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sub {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  .sectionImg {
+    height: 50vh;
+    width: 90%;
+  }
+  .sectionText {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

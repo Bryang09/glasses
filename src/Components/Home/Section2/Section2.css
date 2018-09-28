@@ -1,0 +1,118 @@
+.Section2 {
+  height: 40vh;
+  margin: 5vh 0;
+}
+
+.Section2 .sub2 {
+  display: flex;
+  margin-top: 3vh;
+  height: 40vh;
+  margin: 0 auto;
+}
+
+.men,
+.women,
+.kids {
+  width: 30%;
+  margin: 1vh 1.5%;
+}
+
+.subText h4 {
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: center;
+  color: #000;
+}
+
+.men {
+  background: url("https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.men .subCover:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/839586/pexels-photo-839586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  opacity: 1;
+}
+.women {
+  background: url("https://images.pexels.com/photos/1112203/pexels-photo-1112203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.women .subCover:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/1112203/pexels-photo-1112203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  opacity: 1;
+}
+.kids {
+  background: url("https://images.unsplash.com/photo-1521033642843-98796bf52379?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cc19efb5aefac7e60b17e01cd4995d6e&auto=format&fit=crop&w=1052&q=80")
+    no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.kids .subCover:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1521033642843-98796bf52379?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cc19efb5aefac7e60b17e01cd4995d6e&auto=format&fit=crop&w=1052&q=80")
+      no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.subCover {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.subText {
+  display: flex;
+  background: rgba(255, 255, 255, 0.8);
+  width: 85%;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+.subText h4 {
+  margin: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .Section2 .sub2 {
+    width: 95%;
+  }
+  .subText h4 {
+    font-size: 1.2em;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Section2 {
+    height: 100%;
+  }
+  .Section2 .sub2 {
+    flex-direction: column;
+    height: 100%;
+  }
+  .men,
+  .women,
+  .kids {
+    width: 95%;
+    margin: 3vh auto;
+    height: 350px;
+  }
+}
